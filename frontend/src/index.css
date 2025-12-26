@@ -1,0 +1,26 @@
+/* small utility for hero overlay */
+.hero-overlay {
+  background: rgba(0, 0, 0, 0.15);
+}
+html {
+  scroll-behavior: smooth; /* smooth scroll */
+}
+
+body {
+  overscroll-behavior-y: contain; /* prevent fast fling */
+}
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fadeUp {
+  animation: fadeUp 0.6s ease-out forwards;
+}
