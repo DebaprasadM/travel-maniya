@@ -2,7 +2,7 @@ import axios from 'axios';
 const API = axios.create({
   baseURL:
   //  process.env.REACT_APP_API_URL || 
-   'https://6mqmf6l1-5000.inc1.devtunnels.ms/api'
+   'https://travel-maniya.onrender.com/api'
 });
 
 export const getTours = (params = {}) => API.get('/tours', { params }).then(r => r.data);
